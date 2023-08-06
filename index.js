@@ -19190,18 +19190,59 @@ function BeeSwarmSimulator(DATA){
 
     gear.tool={
         
-        shovel:{
+         shovel:{
             
-            collectPattern:[[0,0],[0,-1]],
-            collectAmount:2,
-            cooldown:0.8,
+            collectPattern:[[0,0],[0,-1],[0,-2],[0,-3],[0,-4],[0,-5],[0,-6],[-1,-3],[-1,-4],[-1,-5],[1,-3],[1,-4],[1,-5],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[-1,3],[-1,4],[-1,5],[1,3],[1,4],[1,5],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[3,1],[4,1],[5,1],[3,-1],[4,-1],[5,-1],[-1,0],[-2,0],[-3,0],[-4,0],[-5,0],[-6,0],[-3,1],[-4,1],[-5,1],[-3,-1],[-4,-1],[-5,-1]],
+            collectAmount:900000000000000,
+            cooldown:0.1,
             mesh:function(box,cylinder,sphere,star){
                 
-                box(-0.3,0,0.6,0.1,0.1,0.8,false,[0.5,0.2,0])
-                box(-0.3,0,1.2,0.3,0.1,0.4,false,[0.2,0.2,0.2])
+                box(-0.3-0.1,0.6,0.3+0.1,0.15,1.5,0.15,false,[0,0.7,0])
+                box(-0.3-0.1,1.45,0.3+0.1,0.3,0.3,0.3,[45,0,45],[1.5,1.2,0])
+                for(let i=0;i<MATH.TWO_PI;i+=MATH.TWO_PI/3){
+                    
+                    box(-0.3+Math.sin(i)*0.5-0.1,1.35,0.3+0.1+Math.cos(i)*0.5,0.7,0.1,0.7,[Math.sin(i)*-30,0,Math.cos(i)*-30],[1.2,1.2,1.2])
+                }
+                
+                for(let i=MATH.QUATER_PI;i<MATH.TWO_PI+MATH.QUATER_PI;i+=MATH.TWO_PI/3){
+                    
+                    box(-0.3+Math.sin(i)*0.5-0.1,1.35,0.3+0.1+Math.cos(i)*0.5,0.7,0.1,0.7,[Math.sin(i)*30,0,Math.cos(i)*30],[1.2,1.2,1.2])
+                    
+                }
+                
+                for(let i=0;i<MATH.TWO_PI;i+=MATH.TWO_PI/3){
+                    
+                    box(-0.3-0.1+Math.sin(i)*0.5,1.2,0.3+0.1+Math.cos(i)*0.5,0.7,0.1,0.7,[60,i*MATH.TO_DEG,0],[1.2,1.2,1.2])
+                    box(-0.3-0.1+Math.sin(i)*0.25,1.2,0.3+0.1+Math.cos(i)*0.25,0.7,0.1,0.7,[-60,i*MATH.TO_DEG,0],[1.2,1.2,1.2])
+                }
             },
-            desc:'A trusty shovel.<br><br>Collects 5 pollen from 2 flowers every 1s.',
-            cost:['0 honey']
+            ability:function(){
+                
+                if(player.toolUses%3===0){
+                    
+                    objects.mobs.push(new PetalShuriken([player.body.position.x,player.body.position.y+0.25,player.body.position.z],player.bodyDir.slice()))
+                }
+            },
+            particles:function(){
+                
+                toolParticle-=dt
+                
+                if(toolParticle>0){return}
+                
+                toolParticle=0.3
+                
+                let x=-player.bodyDir[2],z=player.bodyDir[0],r=0.325
+                
+                x+=player.bodyDir[0]
+                z+=player.bodyDir[2]
+                
+                x*=r
+                z*=r
+                
+                ParticleRenderer.add({x:player.body.position.x+x,y:player.body.position.y+1.65,z:player.body.position.z+z,vx:MATH.random(-0.9,0.9),vy:Math.random()*0.5+0.2,vz:MATH.random(-0.9,0.9),grav:-1.5,size:MATH.random(20,50),col:[0.9,0.7,0.3],life:0.7,rotVel:MATH.random(-3,3),alpha:0.35})
+            },
+            desc:'A luxurious flower with enchanted petals.<br><br>Collects 10 pollen from 49 flowers every 0.7s.<br><br>Every 3rd swing summons a flying petal shuriken that collects tokens and causes bees to convert pollen.',
+            cost:['1000000000 honey','5 starJelly','25 enzymes','25 glitter']
         },
 
         rake:{
