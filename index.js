@@ -19242,7 +19242,7 @@ function BeeSwarmSimulator(DATA){
                 ParticleRenderer.add({x:player.body.position.x+x,y:player.body.position.y+1.65,z:player.body.position.z+z,vx:MATH.random(-0.9,0.9),vy:Math.random()*0.5+0.2,vz:MATH.random(-0.9,0.9),grav:-1.5,size:MATH.random(20,50),col:[0.9,0.7,0.3],life:0.7,rotVel:MATH.random(-3,3),alpha:0.35})
             },
             desc:'A luxurious flower with enchanted petals.<br><br>Collects 10 pollen from 49 flowers every 0.7s.<br><br>Every 3rd swing summons a flying petal shuriken that collects tokens and causes bees to convert pollen.',
-            cost:['0 honey','5 starJelly','25 enzymes','25 glitter']
+            cost:['0 honey','0 starJelly','0 enzymes','0 glitter']
         },
 
         rake:{
