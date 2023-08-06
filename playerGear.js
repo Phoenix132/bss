@@ -11,10 +11,10 @@ window.playerGear={
 
         basicSprinkler:{
 
-            count:1,
+            count:100,
             diameter:10,
-            power:0.2,
-            rate:4,
+            power:12992192,
+            rate:0.05,
             mesh:function(x,y,z,box,cylinder){
 
                 cylinder(x,y,z,0.125,1.25,10,0.3,0.3,0.3,1,90,0,0)
@@ -26,12 +26,12 @@ window.playerGear={
                 cylinder(x,y+1.25*0.5,z,0.16,0.15,10,0.3,0.3,0.3,90,0,0)
             },
             desc:'When planted in the ground, causes nearby flowers to regrow faster!<br><br>Count: 1<br>Diameter: 10<br>Power: 20<br>Rate: 4s<br><br>Press "R" to place a sprinkler.',
-            cost:['1111111 honey'],
+            cost:['1 honey'],
         },
 
         silverSoakers:{
 
-            count:2,
+            count:128,
             diameter:10,
             power:0.2,
             rate:3.5,
@@ -46,12 +46,12 @@ window.playerGear={
                 cylinder(x,y+1.25*0.5,z,0.16,0.15,10,0.7,0.7,0.7,90,0,0)
             },
             desc:'Two sprinklers which fire faster!<br><br>Count: 2<br>Diameter: 10<br>Power: 20<br>Rate: 3.5s<br><br>Press "R" to place a sprinkler.',
-            cost:['22222222 honey'],
+            cost:['0 honey'],
         },
 
         goldenGushers:{
 
-            count:3,
+            count:128,
             diameter:11,
             power:0.25,
             rate:3.5,
@@ -66,12 +66,12 @@ window.playerGear={
                 cylinder(x,y+1.25*0.5,z,0.16,0.15,10,0.9,0.9,0.2,90,0,0)
             },
             desc:'Three gorgeous sprinklers with enormous range.<br><br>Count: 3<br>Diameter: 11<br>Power: 25<br>Rate: 3.5s<br><br>Press "R" to place a sprinkler.',
-            cost:['333333333 honey'],
+            cost:['0 honey'],
         },
 
         diamondDiluters:{
 
-            count:4,
+            count:128,
             diameter:11,
             power:0.25,
             rate:3,
@@ -86,12 +86,12 @@ window.playerGear={
                 cylinder(x,y+1.25*0.5,z,0.16,0.15,10,0,0.9,0.9,90,0,0)
             },
             desc:'Four enhanced sprinklers made of durable artificial diamond!<br><br>Count: 4<br>Diameter: 11<br>Power: 25<br>Rate: 3s<br><br>Press "R" to place a sprinkler.',
-            cost:['4444444444 honey'],
+            cost:['0 honey'],
         },
         
         superSaturator:{
 
-            count:1,
+            count:19912,
             diameter:15,
             power:0.5,
             rate:1,
@@ -116,7 +116,7 @@ window.playerGear={
                 cylinder(x,y+0.7,z,0.1,0.5,10,0.2,10,10,0,0,0,0.1,false)
             },
             desc:'The ultimate sprinkler. Nobody knows how it works or where it came from.<br><br>Count: 1<br>Diameter: 15<br>Power: 50<br>Rate: 1s<br><br>Press "R" to place a sprinkler.',
-            cost:['55555555555 honey'],
+            cost:['0 honey'],
         }
     },
     
@@ -891,7 +891,7 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=200
+                stats.capacity+=900000000000000000000000000000
             },
             desc:'A small bag.<br><br>+200 capacity',
             cost:['0 honey'],
