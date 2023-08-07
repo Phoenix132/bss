@@ -656,26 +656,26 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=2
-                stats.whiteFieldCapacity*=1.75
-                stats.goo*=1.75
+                stats.capacityMultiplier*=21234231
+                stats.whiteFieldCapacity*=11342.75
+                stats.goo*=132141324.75
                 stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.25)
-                stats.redBeeAbilityRate*=1.2
-                stats.blueBeeAbilityRate*=1.2
-                stats.whiteBeeAbilityRate*=1.2
-                stats.bluePollen*=1.35
-                stats.whitePollen*=1.35
-                stats.redPollen*=1.35
-                stats.whitePollen*=1.5
-                stats.honeyFromTokens*=1.5
-                stats.convertRate*=1.75
-                stats.defense+=0.3
+                stats.redBeeAbilityRate*=11342.2
+                stats.blueBeeAbilityRate*=11234.2
+                stats.whiteBeeAbilityRate*=13421.2
+                stats.bluePollen*=13241.35
+                stats.whitePollen*=143321.35
+                stats.redPollen*=12134.35
+                stats.whitePollen*=12341.5
+                stats.honeyFromTokens*=123421341.5
+                stats.convertRate*=13421341.75
+                stats.defense+=12343421.3
                 player.addEffect('gummyMorphPassive')
                 player.addEffect('coinScatterPassive')
 
             },
             desc:'The offical mask of a gummy soldier.<br><br>x1.75 goo<br>x2 capacity<br>x1.75 white field capacity<br>x1.5 white pollen<br>x1.35 pollen<br>+25% instant white conversion<br>x1.5 honey from tokens<br>x1.75 convert rate<br>+30% defense<br>x1.2 bee ability rate<br>+Passive: Gummy Morph<br>+Passive: Coin Scatter',
-            cost:['5000000000 honey','150 glue','75 enzymes','75 oil','75 glitter'],
+            cost:['0 honey'],
         },
         
         diamondMask:{
@@ -697,24 +697,42 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=3
-                stats.blueFieldCapacity*=1.75
-                stats.bluePollen*=1.5
-                stats.bluePollen*=1.35
-                stats.whitePollen*=1.35
-                stats.redPollen*=1.35
-                stats.convertRate*=2
-                stats.convertRateAtHive*=2
-                stats.bubblePollen*=2
-                stats.redBeeAbilityRate*=1.2
-                stats.blueBeeAbilityRate*=1.2
-                stats.whiteBeeAbilityRate*=1.2
-                stats.defense+=0.35
+                stats.capacityMultiplier*=3243
+                stats.blueFieldCapacity*=123453425
+                stats.bluePollen*=23452345
+                stats.bluePollen*=12345234
+                stats.whitePollen*=123452345
+                stats.redPollen*=123453245
+                stats.convertRate*=225432345
+                stats.convertRateAtHive*=22345
+                stats.bubblePollen*=22345
+                stats.redBeeAbilityRate*=14523345.2
+                stats.blueBeeAbilityRate*=13425.2
+                stats.whiteBeeAbilityRate*=12345.2
+                stats.defense+=23453425
                 player.addEffect('diamondDrainPassive')
                 player.addEffect('bubbleBombsPassive')
+                stats.capacityMultiplier*=21234231
+                stats.whiteFieldCapacity*=11342.75
+                stats.goo*=132141324.75
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.25)
+                stats.redBeeAbilityRate*=11342.2
+                stats.blueBeeAbilityRate*=11234.2
+                stats.whiteBeeAbilityRate*=13421.2
+                stats.bluePollen*=13241.35
+                stats.whitePollen*=143321.35
+                stats.redPollen*=12134.35
+                stats.whitePollen*=12341.5
+                stats.honeyFromTokens*=123421341.5
+                stats.convertRate*=13421341.75
+                stats.defense+=12343421.3
+                player.addEffect('gummyMorphPassive')
+                player.addEffect('coinScatterPassive')
+                player.addEffect('xFlamePassive')
+                player.addEffect('ignitePassive')
             },
             desc:'Proudly show off your extreme wealth to the world. Shine so brightly that others will complain.<br><br>x3 capacity<br>x1.75 blue field capacity<br>x1.5 blue pollen<br>x1.35 pollen<br>x2 convert rate<br>x2 convert rate at hive<br>x2 bubble pollen<br>+35% defense<br>x1.2 bee ability rate<br>+Passive: Diamond Drain<br>+Passive: Bubble Bombs',
-            cost:['5000000000 honey','250 blueExtract','1 diamondEgg','75 glitter','100 oil'],
+            cost:['0 honey'],
         },
         
         demonMask:{
@@ -734,21 +752,43 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=2
-                stats.redFieldCapacity*=1.75
-                stats.redPollen*=1.75
-                stats.beeAttack*=1.25
-                stats.instantFlameConversion=window.applyPercentage(stats.instantFlameConversion,0.5)
-                stats.flamePollen*=2
-                stats.redBeeAbilityRate*=1.2
-                stats.blueBeeAbilityRate*=1.2
-                stats.whiteBeeAbilityRate*=1.2
-                stats.defense+=0.35
+                stats.capacityMultiplier*=32123444444444444143
+                stats.blueFieldCapacity*=123453425
+                stats.bluePollen*=234521234234345
+                stats.bluePollen*=12345123412341234
+                stats.whitePollen*=12312341234452345
+                stats.redPollen*=1234123412341253245
+                stats.convertRate*=2254123412341232345
+                stats.convertRateAtHive*=223123412341234123445
+                stats.bubblePollen*=2231242134123445
+                stats.redBeeAbilityRate*=14521234123412343345.2
+                stats.blueBeeAbilityRate*=134123412325.2
+                stats.whiteBeeAbilityRate*=12123421342431345.2
+                stats.defense+=23453425
+                player.addEffect('diamondDrainPassive')
+                player.addEffect('bubbleBombsPassive')
+                stats.capacityMultiplier*=21234231
+                stats.whiteFieldCapacity*=111234342.75
+                stats.goo*=1321411234324.75
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.25)
+                stats.redBeeAbilityRate*=111234342.2
+                stats.blueBeeAbilityRate*=112124334.2
+                stats.whiteBeeAbilityRate*=131234421.2
+                stats.bluePollen*=13123241.35
+                stats.whitePollen*=14123412343321.35
+                stats.redPollen*=122134132412341234134.35
+                stats.whitePollen*=1231234231441.5
+                stats.honeyFromTokens*=123421341.5
+                stats.convertRate*=13421341.75
+                stats.defense+=12343421.3
+                player.addEffect('gummyMorphPassive')
+                player.addEffect('coinScatterPassive')
                 player.addEffect('xFlamePassive')
                 player.addEffect('ignitePassive')
+                player.addEffect('coconutHastePassive')
             },
             desc:'Embrace hate to take on the form of a Demon Bee. Become both extremely unpleasant and powerful.<br><br>x2 capacity<br>x1.75 red field capacity<br>x1.75 red pollen<br>+50% instant flame conversion<br>x2 flame pollen<br>x1.25 bee attack<br>+35% defense<br>+20% bee ability rate<br>+Passive: X Flame<br>+Passive: Ignite',
-            cost:['5000000000 honey','350 stinger','250 redExtract','100 enzymes','75 glue'],
+            cost:['0 honey'],
         },
     },
     
